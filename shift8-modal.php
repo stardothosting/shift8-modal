@@ -11,7 +11,7 @@
 
 // Load Animated Modal
 function shift8_modal_scripts() {
-	wp_enqueue_script( 'animate-js', plugin_dir_url( __FILE__ ) . 'js/animatedModal.js', array(), true );
+	wp_enqueue_script( 'animate-js', plugin_dir_url( __FILE__ ) . 'js/animatedModal.min.js', array(), true );
 	wp_enqueue_style( 'animate', plugin_dir_url( __FILE__ ) . 'css/animate.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'shift8_modal_scripts', 12,1 );
