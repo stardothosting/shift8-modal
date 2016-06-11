@@ -8,7 +8,7 @@
 * License: GPLv3
 * License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Plugin that allows you to integrate AnimatedModal library in order to create full screen modal flyout windows.
+This is a Wordpress Plugin that allows you to integrate AnimatedModal library (with Animate.css) in order to create full screen modal flyout windows.
 
 ##  Description 
 
