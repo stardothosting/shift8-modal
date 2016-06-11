@@ -63,9 +63,9 @@ You can visit the [Animate.css](http://daneden.github.io/animate.css/ "Animate.c
 
 You can visit [our website](https://www.shift8web.ca "Toronto Web Design") to see! :)
 
-== Changelog ==
+## Changelog
 
-= 1.0 =
+### 1.0 
 * Stable version created
 * Implemented short code options 
 
