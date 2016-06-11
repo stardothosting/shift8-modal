@@ -47,7 +47,7 @@ You can either style the content that the shortcode pulls (page ID) by using the
 This is planned for a future update of the plugin. Alternatively you can simply use the CSS class that is assigned to the close button area to inject font awesome icons (or any icon pack) and remove the close text. For example :
 
 <pre>
-#shift8-close-modal :before {
+#shift8-close-modal ::before {
 	content: 'whatever';
 }
 #shift8-close-modal a {
