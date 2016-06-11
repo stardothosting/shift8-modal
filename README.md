@@ -1,7 +1,7 @@
 # Shift8 Modal 
 * Contributors: 
 * Donate link: https://www.shift8web.ca
-* Tags: modal, flyout, jquery, window, full screen modal, full screen, jquery full screen, full width modal, full width
+* Tags: modal, flyout, jquery, window, full screen modal, full screen, jquery full screen, full width modal, full width, animatedmodal, animated modal, animatedmodal.js,animatedcss,animated.css,animated css, animated js
 * Requires at least: 3.0.1
 * Tested up to: 4.5.2
 * Stable tag: 4.3
