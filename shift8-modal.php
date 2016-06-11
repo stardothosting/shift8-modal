@@ -6,7 +6,7 @@
  * Version: 1.0.0
  * Author: Shift8 Web 
  * Author URI: https://www.shift8web.ca
- * License: MIT
+ * License: GPLv3
  */
 
 // Load Animated Modal
