@@ -1,12 +1,12 @@
 # Shift8 Modal 
-Contributors: 
-Donate link: https://www.shift8web.ca
-Tags: modal, flyout, jquery, window, full screen modal, full screen, jquery full screen, full width modal, full width
-Requires at least: 3.0.1
-Tested up to: 4.5.2
-Stable tag: 4.3
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
+* Contributors: 
+* Donate link: https://www.shift8web.ca
+* Tags: modal, flyout, jquery, window, full screen modal, full screen, jquery full screen, full width modal, full width
+* Requires at least: 3.0.1
+* Tested up to: 4.5.2
+* Stable tag: 4.3
+* License: GPLv3
+* License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
 Plugin that allows you to integrate AnimatedModal library in order to create full screen modal flyout windows.
 
