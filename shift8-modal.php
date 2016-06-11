@@ -32,20 +32,19 @@ function shift8_modal_shortcode($atts){
 	), $atts));
 
 	// Cant proceed without post_id
-	if (empty($post_id)) {
-		return 'You must enter a post ID for the shortcode to work!';
+	if (empty($post_id) || !is_numeric($post_id)) {
+		return 'You must enter a post ID number for the shortcode to work!';
 	}
 
 	if ( FALSE === get_post_status($post_id)) {
 		return 'The post ID you entered isn\'t valid!';
 	} else {
 		// Clean vars
-		$post_id = esc_attr($post_id);
-		$call_modal = esc_attr($call_modal);
-		$close_modal = esc_attr($close_modal);
-		$animatedIn = esc_attr($animatedIn);
-		$animatedOut = esc_attr($animatedOut);
-		$color = esc_attr($color);
+		$call_modal = esc_html($call_modal);
+		$close_modal = esc_html($close_modal);
+		$animatedIn = esc_js($animatedIn);
+		$animatedOut = esc_js($animatedOut);
+		$color = esc_html($color);
 		
 		// Set the trigger as button or plain text
 		if (strcasecmp($call_type, 'button') == 0) {
