@@ -3,7 +3,7 @@
  * Plugin Name: Shift8 Modal
  * Plugin URI: https://github.com/stardothosting/shift8-modal 
  * Description: This plugin incorporates animatedModal.js into easy-to-use shortcode
- * Version: 1.0.0
+ * Version: 1.1
  * Author: Shift8 Web 
  * Author URI: https://www.shift8web.ca
  * License: GPLv3
@@ -58,7 +58,7 @@ function shift8_modal_shortcode($atts){
 
 		// Prepare output
 	        $modal_output = $close_modal_output;
-	        $modal_output .=  '<div id="shift8modal-'.$post_id.'">
+	        $modal_output .=  '<div id="shift8modal-'.$post_id.'" class="shift8modal-container">
                             <div id="shift8-close-modal" class="close-shift8modal close-shift8modal-'.$post_id.'">
                                 '.$close_modal.'
                             </div>
