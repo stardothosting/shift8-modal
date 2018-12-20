@@ -3,7 +3,7 @@
  * Plugin Name: Shift8 Modal
  * Plugin URI: https://github.com/stardothosting/shift8-modal 
  * Description: This plugin incorporates animatedModal.js into easy-to-use shortcode
- * Version: 1.1
+ * Version: 1.2
  * Author: Shift8 Web 
  * Author URI: https://www.shift8web.ca
  * License: GPLv3
