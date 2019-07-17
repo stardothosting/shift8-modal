@@ -3,8 +3,8 @@ Contributors:
 Donate link: https://www.shift8web.ca
 Tags: modal, flyout, jquery, window, full screen modal, full screen, jquery full screen, full width modal, full width, animatedmodal, animated modal, animatedmodal.js,animatedcss,animated.css,animated css, animated js
 Requires at least: 3.0.1
-Tested up to: 4.9.6
-Stable tag: 1.1
+Tested up to: 5.0.2
+Stable tag: 1.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -76,3 +76,6 @@ You can visit [our website](https://www.shift8web.ca "Toronto Web Design") to se
 
 = 1.1 =
 * Added global container class that can be applied to all modal content instead of individually
+
+= 1.2 =
+* Wordpress 5 compatibility
