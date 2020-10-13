@@ -3,7 +3,7 @@
  * Plugin Name: Shift8 Modal
  * Plugin URI: https://github.com/stardothosting/shift8-modal 
  * Description: This plugin incorporates animatedModal.js into easy-to-use shortcode
- * Version: 1.2
+ * Version: 1.3
  * Author: Shift8 Web 
  * Author URI: https://www.shift8web.ca
  * License: GPLv3
@@ -58,20 +58,28 @@ function shift8_modal_shortcode($atts){
 
 		// Prepare output
 	        $modal_output = $close_modal_output;
-	        $modal_output .=  '<div id="shift8modal-'.$post_id.'" class="shift8modal-container">
+            $modal_output .=  '<div id="shift8modal-'.$post_id.'" class="shift8modal-container shift8modal-container-'.$post_id.'" style="display:none;">
                             <div id="shift8-close-modal" class="close-shift8modal close-shift8modal-'.$post_id.'">
                                 '.$close_modal.'
                             </div>
                             <div class="shift8-modal-content shift8-modal-content-'.$post_id.'">
-                                    '.$modal_content->post_content.'
+                                    '.do_shortcode($modal_content->post_content).'
                             </div>
                         </div>';
-	        $modal_output .= '<script type="text/javascript">
-                            jQuery("#shift8-modal-'.$post_id.'").animatedModal({
-                                modalTarget: \'shift8modal-'.$post_id.'\',
-                                animatedIn: \''.$animatedIn.'\',
-                                animatedOut: \''.$animatedOut.'\',
-                                color: \''.$color.'\'
+            $modal_output .= '<script type="text/javascript">
+                            jQuery( document ).ready(function() {
+                                jQuery("#shift8-modal-'.$post_id.'").animatedModal({
+                                    beforeOpen: function() {
+                                        jQuery(".shift8modal-container-'.$post_id.'").show();
+                                    },
+                                    modalTarget: \'shift8modal-'.$post_id.'\',
+                                    animatedIn: \''.$animatedIn.'\',
+                                    animatedOut: \''.$animatedOut.'\',
+                                    color: \''.$color.'\',
+                                });
+                                jQuery(".close-shift8modal-'.$post_id.'").click(function() {
+                                    jQuery(".shift8modal-container-'.$post_id.'").hide();
+                                });
                             });
                         </script>';
 		return $modal_output;
